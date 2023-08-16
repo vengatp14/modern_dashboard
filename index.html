@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>venkatesh ponraj</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font asm  -->
+<link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.css">
+<!-- chart ja  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+   </head>
+   <style>
+     .navbar-light .navbar-toggler-icon {
+    color: #78eac8;
+    background-image: url(./assets/icorns/Menu/03.png);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color:  #001321;
+    background-clip: padding-box;
+    border: 1px solid  #001321;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color:  #001321;
+    border: 1px solid #001321;
+    border-radius: .25rem;
+}
+
+   </style>
+<body >
+<!-- side nav close -->
+
+  <div class="sidebar">
+    <div class="logo-details">
+     
+        <div style=" color: #78eac8;"  class="m-color logo_name ">Gaipp UI Task
+        </div>
+        <i style=" color: #78eac8;" class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+    
+      <li>
+        <a href="#">
+          <i style=" color: #78eac8;" class='bx bx-grid-alt'></i>
+          <span style=" color: #78eac8;" class="links_name">Dashboard</span>
+        </a>
+         <span style=" color: #78eac8;" class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+        <i style=" color: #78eac8;" class="fa fa-bar-chart" aria-hidden="true"></i>
+         <span style=" color: #78eac8;" class="links_name">chart</span>
+       </a>
+       <span style=" color: #78eac8;" class="tooltip">chart</span>
+     </li>
+     <li>
+       <a href="#">
+        <i style=" color: #78eac8;" class="fa fa-sticky-note" aria-hidden="true"></i>
+         <span style=" color: #78eac8;" class="links_name">notes</span>
+       </a>
+       <span style=" color: #78eac8;" class="tooltip">notes</span>
+     </li>
+     <li>
+       <a href="#">
+        <i style=" color: #78eac8;" class="fas fa-wallet"></i>
+         <span style=" color: #78eac8;" class="links_name">wallet</span>
+       </a>
+       <span style=" color: #78eac8;" class="tooltip">wallet</span>
+     </li>
+     <li>
+       <a href="#">
+        <i style=" color: #78eac8;" class="fas fa-certificate"></i>
+         <span style=" color: #78eac8;" class="links_name">badge</span>
+       </a>
+       <span style=" color: #78eac8;" class="tooltip">badge</span>
+     </li>
+     <li>
+       <a href="#">
+        <i style=" color: #78eac8;" class="fas fa-chart-line"></i>
+         <span style=" color: #78eac8;" class="links_name">analatics</span>
+       </a>
+       <span style=" color: #78eac8;" class="tooltip">analatics</span>
+     </li>
+     <li>
+       <a href="#">
+        <i style=" color: #78eac8;" class="fas fa-bell"></i>
+         <span style=" color: #78eac8;" class="links_name">notify</span>
+       </a>
+       <span style=" color: #78eac8;" class="tooltip">notify</span>
+     </li>
+     <li>
+       <a href="#">
+        <i style=" color: #78eac8;" class="fas fa-cog"></i>
+         <span style=" color: #78eac8;" class="links_name">setting</span>
+       </a>
+       <span style=" color: #78eac8;" class="tooltip">Setting</span>
+     </li>
+     <li>
+      <a href="#">
+      <div>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+        <span style=" color: #78eac8;" class="links_name">&nbsp; dark & light</span>
+      </a>
+      <span style=" color: #78eac8;" class="tooltip"> dark & light</span>
+    </li>
+    </ul>
+  </div>
+<!-- side nav close -->
+
+
+
+<!-- top nav start  -->
+
+  <section style="background:#001321" class="home-section">
+ 
+      <nav  class="navbar navbar-expand-lg navbar-light  ">
+         <div class="container">
+            
+           <a  class="navbar-brand input-in-mobile" href="#"><div class="input-group mb-2">
+           
+            <input  type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"><i style="color: rgb(120,234,200);" class="fa fa-search"></i></span>
+          </div></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav mx-auto  mb-2 mb-lg-0">
+
+               <li class="nav-item me-lg-1 ">
+                  
+                  <button type="button" style="background-color: #78eac8;" class="btn  text-white ms-5 mb-2 ms-5 mt-2"><i class="fa fa-certificate" aria-hidden="true"></i> 24</button>
+          
+               
+            </li>
+               <li class="nav-item me-lg-5 mb-2 mt-2 ms-5">
+                  <button  type="button" class="btn  position-relative">
+                     <img src="./assets/icorns/Menu/07.png" alt="">
+                     <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                       <span class="visually-hidden">New alerts</span>
+                     </span>
+                   </button>
+               </li>
+           
+               <li class="nav-item dropdown mb-2 mt-2 ms-5">
+                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Eng/USD
+                 </a>
+                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item mx-lg-5  ms-5">
+                 <a class="nav-link "><img src="./assets/icorns/tranmautritam logo.png" height="40px" width="40px" alt=""></a>
+               </li>
+              
+             </ul>
+             <span  class="nav-item mx-lg-5 mb-2 mt-2 ">
+              <button   class=" wallet">connect wallet</button>
+             </span>
+           </div>
+         </div>
+       </nav>
+<!-- top nav close -->
+      
+
+<div class="container">
+  <div class="row g-0">
+    <div class="col-12">
+      <!-- haeding od dash bard  -->
+      <h1 class="text-light mt-5 mb-5">
+        Explore Mulitswap
+      </h1>
+    </div>
+    <!-- section start  -->
+    <div class=" col-md-4 col-lg-2   text-white">
+      <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 1.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Bridge</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 2.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Swap</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 3.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">+ Liqidty</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 4.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Farms</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 5.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Boosted</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 6.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Borrow</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section close  -->
+   
+
+
+    
+    <!-- section start  -->
+    <div class="   col-md-4 col-lg-2  text-white">
+      <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 7.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Zap</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 8.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Bond</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 9.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Inspirit</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 10.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">WinSpirt</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 11.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Portfolio</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="   col-md-4 col-lg-2 text-white">
+       <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="./assets/icorns/image 12.png" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">APE</h5>
+              <p class="card-text"><small class="text-muted">Explore</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- section  close-->
+
+   
+<!-- section  start-->
+
+<div class="col-lg-6 col-md-12 mt-5">
+  <div class="row g-0 text-white">
+    <div style="background-color:#001d32 ;" class="card mb-3 " >
+          <div class="card-body d-flex d-inline">
+            <div class="col-5 mt-3">
+             <span>Farms & Stacking</span> <br>
+             <b class="text-muted">Explore</b>
+            </div>
+            <div class="col-5 mt-3">
+              <span>Multi to Harvest</span> <br>
+              <b style="font-size: 20px;" class="text-muted">locked</b>
+            </div>
+            <div class="col-2 ">
+              <img src="./assets/icorns/dollar-symbol-_2_.png" class="img-fluid rounded-start m-3" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-8 mt-5">
+      <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row g-0">
+         
+          <div class="col-12">
+            <div class="card-body d-flex d-inline">
+              <div class="col-8 mt-3">
+               <span class="text-white">MULTI in Wallet</span> <br>
+               <b class="text-muted">12,085,256</b>
+              </div>
+              <div class="col-4 ">
+                <img src="./assets/icorns/zap.png" class="img-fluid rounded-start m-3" alt="...">
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="col-lg-3 col-md-4 mt-5">
+      <div style="background-color:#001d32 ;" class="card mb-3 " >
+        <div class="row ">
+          <div class="col-12">
+            <div class="  text-center">
+               <button class="text-white wallet mt-3 mb-3">Connect to harvest</button> <br>
+               <button style="padding: 5px 33px 5px 33px ;" class="text-white wallet mt-2  mb-3">stake smulti</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- section close  -->
+
+
+<div class="col-12 mb-5 ">
+  <div class="row">
+    <!-- chart js  -->
+    <div class=" col-lg-6 col-md-12   mt-4">
+      <div style="background-color:#001d32 ;box-shadow: 1px 1px 12px 3px rgba(120, 234, 200, 0.219);
+      -webkit-box-shadow: 1px 1px 12px 3px rgba(120, 234, 200, 0.226);
+      -moz-box-shadow: 1px 1px 12px 3px rgba(120, 234, 200, 0.205);" class="card ">
+        <div class="card-body">
+          
+          <div class="card-body d-flex">
+            <div class="col-6 mt-3">
+             <span class="text-white">Total Value Locked(TVL)</span> <br>
+             <b class="text-muted"><i class="fas fa-dollar-sign"></i>183,986,015.44</b>
+            </div>
+            <div class="col-4 ">
+              <img src="./assets/icorns/lock.png" class="img-fluid rounded-start me-5" alt="...">
+            </div>
+          </div>
+          <canvas id="myChart" class=" mt-5" style="width:100%;max-width:600px;margin-bottom: 45px;"></canvas>
+        </div>
+      </div>
+    </div>
+    <!-- chart js  -->
+<!-- card  -->
+    <div sty class=" col-lg-6 col-md-12 mt-4">
+      <div style="background-color:#001d32 ;box-shadow: 1px 1px 12px 3px rgba(120, 234, 200, 0.219);
+      -webkit-box-shadow: 1px 1px 12px 3px rgba(120, 234, 200, 0.226);
+      -moz-box-shadow: 1px 1px 12px 3px rgba(120, 234, 200, 0.205);" class="card">
+        <div class="card-body">
+          <h5 class="card-title text-white mb-4">Multi Stats</h5>
+          
+         <div class="d-flex justify-content-between text-white">
+           <p>Circulating supply <i class="far fa-question-circle"></i></p>
+           <p>285,277,299</p>
+         </div>
+         <div class="d-flex justify-content-between text-white">
+          <p>Market Cap </p>
+          <p><i class="fas fa-dollar-sign"></i>43,811,563</p>
+        </div>
+         <div class="d-flex justify-content-between text-white">
+          <p>Total Minted</p>
+          <p>438,012,533</p>
+        </div>
+        <div class="d-flex justify-content-between text-white">
+          <p>Multi locked</p>
+          <p>114,039,081</p>
+        </div>
+        <div class="d-flex justify-content-between text-white">
+          <p>Total Burnt</p>
+          <p>1,406,490</p>
+        </div>
+        <div class="d-flex justify-content-between text-white">
+          <p>New Multi/block</p>
+          <p>12.57</p>
+        </div>
+        <div class="d-flex justify-content-between text-white">
+          <p>Token Price</p>
+          <p> <i class="fas fa-dollar-sign"></i>0.154</p>
+        </div>
+
+      
+
+        <div class="d-flex justify-content-evenly text-white mt-3">
+          <button style="padding: 15px 50px 15px 50px ;" class="text-white wallet mt-2  mb-3"><img src="./assets/icorns/tranmautritam logo.png" alt=""> Buy $ Multi</button>
+          <button style="padding: 15px 50px 15px 50px ;" class="text-white wallet mt-2  mb-3">View on ETHScan</button>
+        </div>
+        </div>
+      </div>
+    </div>
+<!-- card  -->
+
+  </div>
+</div>
+   
+
+
+
+ 
+
+
+
+
+  </div>
+</div>
+
+
+         
+
+
+
+        
+  </section>
+
+
+
+
+<!-- java script  -->
+  <script src="./assets/js/script.js"></script>
+<!-- boostrap js  -->
+  <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+<!-- chart js  -->
+  <script>
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = ["green","green","green","green","green"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    },
+    {
+            type: 'line',
+            label: 'Line Dataset',
+            data: [0,80, 90, 100, 70,100],
+            borderColor: "lightgreen",
+            
+        },
+      ]
+    
+  },
+  options: {
+    
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "venkatesh ponraj creation"
+    }
+    
+  }
+  
+});
+  </script>
+</body>
+</html>
